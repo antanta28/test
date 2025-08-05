@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Redirecting...</title>
-    <script>
-      window.onload = function () {
-        setTimeout(function () {
-          window.location.href = "kfedintest://demo";
-        }, 100);
-      };
-    </script>
+    <title>Открытие приложения</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      .btn {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 30px;
+        background-color: #007aff;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
-    <p>Если не происходит редиректа, нажмите <a href="kfedintest://demo">сюда</a>.</p>
+    <h1>🔐 Безопасный запуск приложения</h1>
+    <p>Нажмите кнопку ниже, чтобы открыть приложение:</p>
+    <a href="kfedintest://demo" class="btn">Открыть приложение</a>
+    <p style="margin-top: 30px; color: gray;">Если ничего не происходит — убедитесь, что приложение установлено.</p>
   </body>
 </html>
